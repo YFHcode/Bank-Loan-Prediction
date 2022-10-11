@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import pickle
-model = pickle.load(open('C:/Users/lenovo/Desktop/bank_loan_prediction-main/bank_loan_prediction-main/model1.pkl', 'rb'))
+model = pickle.load(open('model1.pkl', 'rb'))
 
 
 def run():
@@ -10,7 +10,7 @@ def run():
     st.image(i1, use_column_width=False)
 
 
-    new_title = '<p style="font-family:sans-serif; color:Orange; font-size: 20px;">State Bank Of India</p>'
+    new_title = '<p style="font-family:sans-serif; color:Orange; font-size: 20px;">Bank</p>'
     st.markdown(new_title, unsafe_allow_html=True)
     title = '<p style="font-family:sans-serif; color:orange; font-size: 30px;">Bank_Loan_Prediction</p>'
 
